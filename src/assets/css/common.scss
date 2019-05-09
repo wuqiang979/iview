@@ -1,0 +1,39 @@
+@import '@/assets/css/mixin.scss';
+.content-wrap{
+  // background: #eee;
+  padding: 20px;
+}
+
+.h3-title {
+  @include dp-flex(space-between);
+  // background: $bgcolor;
+  padding: 10px 0;
+  .ivu-icon {
+    font-size: 20px;
+    margin-top: -2px;
+  }
+  .btn-box {
+    span {
+      @include dp-flex;
+    }
+  }
+}
+
+.tips{
+  color: #999;
+}
+
+// 搜索条件
+.search-filter-wrap {
+  .title {
+    @include dp-flex;
+    height: 34px;
+    padding: 0 10px;
+    background: #ededed;
+    font-size: 15px;
+  }
+  .search-box{
+    padding: 20px 0 0;
+    border: 1px solid #ededed;
+  }
+}

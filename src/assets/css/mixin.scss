@@ -1,0 +1,35 @@
+// 主题背景色
+$bgcolor: #ededed;
+$wColor: #2d8cf0;
+
+@mixin textCenter($height) {
+  text-align: center;
+  line-height: $height;
+  height: $height;
+}
+
+@mixin dp-flex($justify-content: flex-start, $align-items: center, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin line-none {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+@mixin line-more($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: $line; // 最多显示8行
+  /*! autoprefixer: off */
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  /*! autoprefixer: on */
+}
